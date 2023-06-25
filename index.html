@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple landing page using HTML CSS</title>
+    <style type="text/css">
+
+        *{padding: 0; margin: 0; box-sizing: border-box;}
+        header{
+            width: 100%;
+            height: 100vh;
+            background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)) , 
+                        url("pexels-muffin-creatives-2468773.jpg");
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .menu a::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+        .menu a:hover::before{
+            width: 90%;
+        }
+        .register a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: indianred;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .register a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+        .h-txt{
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        .h-txt span{
+            letter-spacing: 5px;
+        } 
+        .h-txt h1{
+            font-size: 3.5em;
+        }
+        .h-txt a{
+            text-decoration: none;
+            background-color: indianred;
+            color: white;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            transition: 0.4s;
+        }
+        .h-txt a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+        #one{
+            color: white;
+            background-color: rgb(49, 45, 45);
+            font-family: sans-serif;
+            text-align: center;
+            font-size: 50px;
+            border: 3px solid white;
+            border-radius: 8px;
+            padding: 10px 20px;
+            transition: 0.4s;
+        } 
+       
+        .img{
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+            background-color: rgb(49, 45, 45);
+            background-size: cover;
+        }
+        .img:hover{
+            background-color: transparent;
+            border: 3px solid bisque;
+            
+        }
+        #two{
+        
+            color: white;
+            background-color: rgb(49, 45, 45);
+            font-family: sans-serif;
+            text-align: center;
+            font-size: 50px;
+            border: 3px solid white;
+            border-radius: 8px;
+            padding: 10px 20px;
+            transition: 0.4s;
+            margin: 2px white;
+            
+        }
+        h4{
+            color: bisque;
+            background-color: rgb(49, 45, 45);
+            font-size:30px ;
+           
+        }
+       
+        p{
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+            color: white;
+            background-color: rgb(49, 45, 45);
+            font-size: 15px;
+            background-size: cover;
+            border: 1px solid rgb(49, 45, 45);
+           
+        }
+        #three{
+            color: white;
+            background-color: rgb(49, 45, 45);
+            font-family: sans-serif;
+            text-align: center;
+            font-size: 50px;
+            border: 3px solid white;
+            border-radius: 8px;
+            padding: 10px 20px;
+            transition: 0.4s;
+        }
+        h5{
+            color: bisque;
+            background-color: rgb(49, 45, 45);
+            font-size:30px ;
+           
+        }
+        h6{
+            color: beige;
+            background-color: rgb(49, 45, 45);
+            font-family: sans-serif;
+            font-size: 40px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Travel-X
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#one">Hill station</a>
+                <a href="#two">About Us</a>
+                <a href="#three">Contact</a>
+            </div>
+            <div class="register">
+                <a href="#">Register</a>
+            </div>
+        </nav>
+        <section class="h-txt">
+            <span>Enjoy</span>
+            <h1>International Travel Agency</h1>
+
+            <br>
+            <a href="#">Book your Trip</a>
+        </section>
+
+    </header>
+    <section>
+        <h3 id="one">Hill station </h3>
+        
+        <div>
+            <div class="img">
+              <img src="download (3).jpg" alt="Snow" style="width:100%">
+            </div>
+            <div class="img">
+              <img src="download (4).jpg" alt="Forest" style="width:100%">
+            </div>
+            <div class="img">
+              <img src="istockphoto-627012646-612x612.jpg" alt="Mountains" style="width:100%">
+            </div>
+          </div>
+
+    </section> <br>
+
+    <section>
+        <h3 id="two">About Us</h3>
+        
+        <h4 >Why International Travel Agency-</h4> 
+
+        <p>Established in 2000, MakeMyTrip has since positioned itself as one of the leading companies, providing great offers, competitive airfares, exclusive discounts, and a seamless online booking experience to many of its customers. The experience of booking your flight tickets, hotel stay, and holiday package through our desktop site or mobile app can be done with complete ease and no hassles at all. We also deliver amazing offers, such as Instant Discounts, Fare Calendar, MyRewardsProgram, MyWallet, and many more while updating them from time to time to better suit our customers’ evolving needs and demands.</p>
+
+        <h4>About the site-</h4>
+
+        <p>Customer Support, Payment Security, Privacy Policy, User Agreement, Terms of Service, More Offices, Make A Payment, Work From Home, Report Security Issues</p>
+
+        <h4>Popular International Flight Routes-</h4>
+
+        <p>
+
+            Delhi Singapore flights
+            Delhi Bangkok flights
+            Mumbai Dubai flights
+            Delhi Dubai flights
+            Delhi to London flights
+            Delhi to Toronto flights
+            Delhi to New york flights
+            Bangalore to Singapore flights
+            Delhi to Paris flights
+            Mumbai to Paris flights
+            Delhi to Hong Kong flights</p>
+    </section>
+    
+    <section>
+        <h3 id="three">Contact</h3>
+
+        <h6>Our offices</h6>
+
+        <h5>
+            Bangalore
+        </h5>
+
+        <p>Cleartrip Pvt Ltd.,
+
+            9th floor, Tower A
+            Embassy Tech Village,
+            Devarabeesanahalli, ORR,
+            Bangalore - 560103
+            
+        </p>
+
+        <h5>Email</h5>
+        <p>For booking queries and support, visit
+
+            https://www.cleartrip.com/support
+        </p>
+
+        <h5>Contact No. 6996229696</h5>
+       
+    </section>
+   
+</body>
+</html>
